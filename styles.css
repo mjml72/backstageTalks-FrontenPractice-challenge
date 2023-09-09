@@ -1,0 +1,173 @@
+:root {
+    --pink: #FF608C;
+    --white: #FFFFFF;
+    --green: #00C1B5;
+    --orange: #FF6519;
+    --yellow: #FFBE00;
+    --blue: #1D3FBB;
+    --red: #E30512;   
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--pink);
+    transition: all 0.3s linear;
+}
+
+.logo {
+    width: 200px;
+    margin-right: 5rem;
+}
+
+.logo img {
+   width: 100%;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: fixed;
+    padding: 1rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer > div {
+    width: 32%;
+}
+
+.nav {
+    text-align: end;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+.nav ul li {
+    padding-top: 0.5rem;
+}
+.nav ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav ul a:hover {
+    text-decoration: underline;
+}
+.nav ul a:active {
+    font-weight: bold;
+}
+
+.info {
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: 1.1rem;
+}
+
+.copy {
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+
+.copy a {
+    color: black;
+}
+
+.copy a:hover {
+    text-decoration: none;
+}
+
+.policy {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.policy:hover {
+    text-decoration: none;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.image-container img {
+    height: 60%;
+}
+
+.image-container p {
+    z-index: 10;
+    font-weight: 700;
+}
+
+.image-container p:last-of-type{
+    margin-top: 1rem;
+}
+.image-container p:first-of-type {
+    margin-bottom: 1.5rem;
+}
+
+.main-container .image-container a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+}
+
+.main-container div:nth-child(2) a {
+    color: var(--pink);
+}
+
+.image-container a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        position: relative;
+    }
+    .nav {
+        display: none;
+    }
+
+    .footer {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer > div {
+        width: 80%;
+    }
+}
+
